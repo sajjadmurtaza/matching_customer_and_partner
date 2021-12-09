@@ -1,24 +1,115 @@
-# README
+# matching customer partners
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Simple API to recommended partners based on customer locations and type of work.
 
-Things you may want to cover:
+### Key files
 
-* Ruby version
+    
+    app
+    ├── controller
+    │      ├── api                             
+    │           └── v1                        
+    │               └── partners_controller  
+    │
+    ├── models                    
+    │      ├── customer
+    |      ├── partner
+    |      ├── skill
+    |      ├── partner_skill_set
+    |      └── partner_expertise
+    |
+    ├── services
+    │      ├── match_partner 
+    |      └── serach_validation 
+    |
+    └──  serializer
+            └── matched_partner
+    
 
-* System dependencies
+### Workflow - How does it work?
 
-* Configuration
+The following diagram show the process/workflow of the application.
 
-* Database creation
 
-* Database initialization
+    Please Postman/ Insomnia to test.
 
-* How to run the test suite
+    ```GET / http://localhost:3000/api/v1/partners```
 
-* Services (job queues, cache servers, search engines, etc.)
+    ```
+        { "partner" : {
+            "material": ["wood", "tiles"],
+            "lat": 52.05,
+            "long": 13,
+            "area_in_sqm": "50",
+            "customer_id": "1"
+          }
+        }
+    ```
+ 
+    │    1. GET request with all required params  │ 
+    ├──────────────────────────────────────────── │     
+    │                                             ├                        
+    │    2. It returns all matched partners       │               
+    │──────────────────────────────────────────── │
+    │                                             │
+    │    3. It raises an error with wrong params  │
+    ├──────────────────────────────────────────── │ 
+    │                                             ├       
+    │    3. also return distance to customer      │ 
+    │ ────────────────────────────────────────────│
 
-* Deployment instructions
+***
+**Setup**
 
-* ...
+* first clone the directory 
+                      ```
+                      git clone git@github.com:sajjadmurtaza/matching_customer_and_partner.git'
+                      ```
+ *  ```cd matching_customer_and_partner```
+ *  ```bundle install ```
+ *  ```rake db:create```
+ *  ```rake db:migrate```
+ *  ```rake db:seed```
+ *  ```rails s ```
+ 
+ Then open Postman or Insomnia or any API Testing Tool to connect with server
+ 
+ * Enter url ```http://localhost:3000/api/v1/partners``` and pass parameters as json
+  ```{ "partner" : {
+      "material": ["wood", "tiles"],
+      "lat": 52.05,
+      "long": 13,
+      "area_in_sqm": "50",
+      "customer_id": "1"
+    }
+  }```
+
+  ![alt text](https://raw.githubusercontent.com/sajjadmurtaza49/SchedulyBridge/master/app/assets/images/mp1.png "MP1 Screenshot")
+
+```
+[
+  ...
+  {
+    "name": "Jhon",
+    "rating": 1,
+    "address": "quickborner straße 80 13439 berlin",
+    "phone_number": "01758837834",
+    "operating_radius": 25,
+    "distance_to_customer": 3.45
+  },
+  ```
+]
+
+  ![alt text](https://raw.githubusercontent.com/sajjadmurtaza49/SchedulyBridge/master/app/assets/images/mp2.png "MP Screenshot")
+
+
+### Specs
+
+run ``` bundle exe rspec   ``` to run the tests
+
+#### Note
+I used following gems for this challenge.
+
+* [geocoder](http://www.rubygeocoder.com/) - geocoding library for Ruby.
+* [rspec-rails](https://github.com/rspec/rspec-rails) - testing framework
+* [byebug](https://github.com/deivid-rodriguez/byebug) -  debugger for Ruby
