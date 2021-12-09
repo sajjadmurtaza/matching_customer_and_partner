@@ -33,9 +33,9 @@ The following diagram show the process/workflow of the application.
 
     Please Postman/ Insomnia to test.
 
-    ```GET / http://localhost:3000/api/v1/partners```
+    GET / http://localhost:3000/api/v1/partners
 
-    ```
+    
         { "partner" : {
             "material": ["wood", "tiles"],
             "lat": 52.05,
@@ -44,7 +44,7 @@ The following diagram show the process/workflow of the application.
             "customer_id": "1"
           }
         }
-    ```
+    
  
     │    1. GET request with all required params  │ 
     ├──────────────────────────────────────────── │     
@@ -75,32 +75,32 @@ The following diagram show the process/workflow of the application.
  Then open Postman or Insomnia or any API Testing Tool to connect with server
  
  * Enter url ```http://localhost:3000/api/v1/partners``` and pass parameters as json
-  ```{ "partner" : {
-      "material": ["wood", "tiles"],
-      "lat": 52.05,
-      "long": 13,
-      "area_in_sqm": "50",
-      "customer_id": "1"
+
+    { "partner" : {
+        "material": ["wood", "tiles"],
+        "lat": 52.05,
+        "long": 13,
+        "area_in_sqm": "50",
+        "customer_id": "1"
+      }
     }
-  }```
 
-  ![alt text](https://raw.githubusercontent.com/sajjadmurtaza49/SchedulyBridge/master/app/assets/images/mp1.png "MP1 Screenshot")
+![alt text](https://raw.githubusercontent.com/sajjadmurtaza49/SchedulyBridge/master/app/assets/images/mp1.png "MP1 Screenshot")
 
-```
-[
-  ...
-  {
-    "name": "Jhon",
-    "rating": 1,
-    "address": "quickborner straße 80 13439 berlin",
-    "phone_number": "01758837834",
-    "operating_radius": 25,
-    "distance_to_customer": 3.45
-  },
-  ```
-]
+  [
+    ...
+    {
+      "name": "Jhon",
+      "rating": 1,
+      "address": "quickborner straße 80 13439 berlin",
+      "phone_number": "01758837834",
+      "operating_radius": 25,
+      "distance_to_customer": 3.45
+    },
+    ...
+  ]
 
-  ![alt text](https://raw.githubusercontent.com/sajjadmurtaza49/SchedulyBridge/master/app/assets/images/mp2.png "MP Screenshot")
+![alt text](https://raw.githubusercontent.com/sajjadmurtaza49/SchedulyBridge/master/app/assets/images/mp2.png "MP Screenshot")
 
 
 ### Specs
