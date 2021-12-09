@@ -87,18 +87,18 @@ The following diagram show the process/workflow of the application.
 
 ![alt text](https://raw.githubusercontent.com/sajjadmurtaza49/SchedulyBridge/master/app/assets/images/mp1.png "MP1 Screenshot")
 
-  [
-    ...
-    {
-      "name": "Jhon",
-      "rating": 1,
-      "address": "quickborner straße 80 13439 berlin",
-      "phone_number": "01758837834",
-      "operating_radius": 25,
-      "distance_to_customer": 3.45
-    },
-    ...
-  ]
+    [
+      ...
+      {
+        "name": "Jhon",
+        "rating": 1,
+        "address": "quickborner straße 80 13439 berlin",
+        "phone_number": "01758837834",
+        "operating_radius": 25,
+        "distance_to_customer": 3.45
+      },
+      ...
+    ]
 
 ![alt text](https://raw.githubusercontent.com/sajjadmurtaza49/SchedulyBridge/master/app/assets/images/mp2.png "MP Screenshot")
 
