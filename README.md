@@ -76,15 +76,18 @@ The following diagram show the process/workflow of the application.
  
  * Enter url ```http://localhost:3000/api/v1/partners``` and pass parameters as json
 
-    { "partner" : {
-        "material": ["wood", "tiles"],
-        "lat": 52.05,
-        "long": 13,
-        "area_in_sqm": "50",
-        "customer_id": "1"
-      }
-    }
 
+    ```
+      { "partner" : {
+          "material": ["wood", "tiles"],
+          "lat": 52.05,
+          "long": 13,
+          "area_in_sqm": "50",
+          "customer_id": "1"
+        }
+      }
+    ```
+    
 ![alt text](https://raw.githubusercontent.com/sajjadmurtaza49/SchedulyBridge/master/app/assets/images/mp1.png "MP1 Screenshot")
 
     [
