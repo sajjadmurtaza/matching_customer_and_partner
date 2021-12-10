@@ -40,7 +40,7 @@ class SearchValidation
   end
 
   def customer
-    Customer.find_by_id(params[:customer_id]).present?
+    Customer.find_by_id(params[:customer_id])
   end
 
   def validate_skills

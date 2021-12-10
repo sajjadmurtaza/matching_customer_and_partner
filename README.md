@@ -116,6 +116,8 @@ The following diagram show the process/workflow of the application.
 
 run ``` bundle exe rspec   ``` to run the tests
 
+![alt text](https://raw.githubusercontent.com/sajjadmurtaza49/SchedulyBridge/master/app/assets/images/mp3.png "MP3 Screenshot")
+
 #### Note
 I used following gems for this challenge.
 
