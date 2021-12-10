@@ -12,7 +12,7 @@
 #
 FactoryBot.define do
   factory :skill do
-    name { 'MyString' }
+    name { 'wood' }
     service_id { 1 }
   end
 end

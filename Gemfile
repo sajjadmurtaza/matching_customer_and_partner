@@ -25,6 +25,10 @@ group :development, :test do
   gem 'rubocop-rspec'
 end
 
+group :test do
+  gem 'shoulda'
+end
+
 group :development do
   gem 'annotate'
 end

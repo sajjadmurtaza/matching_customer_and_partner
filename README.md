@@ -66,10 +66,16 @@ The following diagram show the process/workflow of the application.
                       git clone git@github.com:sajjadmurtaza/matching_customer_and_partner.git'
                       ```
  *  ```cd matching_customer_and_partner```
+
  *  ```bundle install ```
  *  ```rake db:create```
  *  ```rake db:migrate```
  *  ```rake db:seed```
+
+ or
+
+ *  ```rake db:setup```
+ 
  *  ```rails s ```
  
  Then open Postman or Insomnia or any API Testing Tool to connect with server
@@ -87,7 +93,7 @@ The following diagram show the process/workflow of the application.
         }
       }
     ```
-    
+
 ![alt text](https://raw.githubusercontent.com/sajjadmurtaza49/SchedulyBridge/master/app/assets/images/mp1.png "MP1 Screenshot")
 
     [

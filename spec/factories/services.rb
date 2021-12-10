@@ -11,6 +11,6 @@
 #
 FactoryBot.define do
   factory :service do
-    name { 'MyString' }
+    name { 'flooring' }
   end
 end

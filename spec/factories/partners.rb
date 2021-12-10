@@ -17,12 +17,12 @@
 #
 FactoryBot.define do
   factory :partner do
-    name { 'MyString' }
-    phone_number { 'MyString' }
-    operating_radius { 1 }
-    address { 'MyString' }
-    latitude { 1 }
-    longitude { 1 }
-    rating { 1 }
+    name { 'Roben' }
+    phone_number { '01724544434' }
+    operating_radius { 40 }
+    address { 'quickborner straße 83 13439 berlin' }
+    latitude { 52 }
+    longitude { 13 }
+    rating { 4 }
   end
 end
