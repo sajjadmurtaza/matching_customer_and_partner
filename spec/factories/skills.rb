@@ -13,6 +13,6 @@
 FactoryBot.define do
   factory :skill do
     name { 'wood' }
-    service_id { 1 }
+    association :service
   end
 end

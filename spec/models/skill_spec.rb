@@ -13,5 +13,11 @@
 require 'rails_helper'
 
 RSpec.describe Skill, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  let(:skill) { create :skill }
+
+  it 'has a valid factory' do
+    expect(skill).to be_valid
+  end
+
+  it { is_expected.to be_a(Skill) }
 end

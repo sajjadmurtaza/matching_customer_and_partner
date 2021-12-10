@@ -12,7 +12,7 @@
 #
 FactoryBot.define do
   factory :partner_expertise do
-    service_id { 1 }
-    partner_id { 1 }
+    association :service
+    association :partner
   end
 end

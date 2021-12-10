@@ -18,5 +18,11 @@
 require 'rails_helper'
 
 RSpec.describe Partner, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  let(:partner) { create :partner }
+
+  it 'has a valid factory' do
+    expect(partner).to be_valid
+  end
+
+  it { is_expected.to be_a(Partner) }
 end

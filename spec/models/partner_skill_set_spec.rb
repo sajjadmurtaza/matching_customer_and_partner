@@ -14,5 +14,11 @@
 require 'rails_helper'
 
 RSpec.describe PartnerSkillSet, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  let(:partner_skill_set) { create :partner_skill_set }
+
+  it 'has a valid factory' do
+    expect(partner_skill_set).to be_valid
+  end
+
+  it { is_expected.to be_a(PartnerSkillSet) }
 end

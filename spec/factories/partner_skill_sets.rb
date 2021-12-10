@@ -14,7 +14,7 @@
 FactoryBot.define do
   factory :partner_skill_set do
     level { 3 }
-    skill_id { 1 }
-    partner_id { 1 }
+    association :skill
+    association :partner
   end
 end

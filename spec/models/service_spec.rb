@@ -12,5 +12,11 @@
 require 'rails_helper'
 
 RSpec.describe Service, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  let(:service) { create :service }
+
+  it 'has a valid factory' do
+    expect(service).to be_valid
+  end
+
+  it { is_expected.to be_a(Service) }
 end
