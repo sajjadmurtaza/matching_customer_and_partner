@@ -94,7 +94,7 @@ The following diagram show the process/workflow of the application.
       }
     ```
 
-![alt text](https://raw.githubusercontent.com/sajjadmurtaza49/SchedulyBridge/master/app/assets/images/mp1.png "MP1 Screenshot")
+![alt text](https://raw.githubusercontent.com/sajjadmurtaza/SchedulyBridge/master/app/assets/images/img/mp1.png "MP1 Screenshot")
 
     [
       ...
@@ -109,14 +109,14 @@ The following diagram show the process/workflow of the application.
       ...
     ]
 
-![alt text](https://raw.githubusercontent.com/sajjadmurtaza49/SchedulyBridge/master/app/assets/images/mp2.png "MP Screenshot")
+![alt text](https://raw.githubusercontent.com/sajjadmurtaza/SchedulyBridge/master/app/assets/images/img/mp2.png "MP Screenshot")
 
 
 ### Specs
 
 run ``` bundle exe rspec   ``` to run the tests
 
-![alt text](https://raw.githubusercontent.com/sajjadmurtaza49/SchedulyBridge/master/app/assets/images/mp3.png "MP3 Screenshot")
+![alt text](https://raw.githubusercontent.com/sajjadmurtaza/SchedulyBridge/master/app/assets/images/img/mp3.png "MP3 Screenshot")
 
 #### Note
 I used following gems for this challenge.
