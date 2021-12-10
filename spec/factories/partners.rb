@@ -24,5 +24,17 @@ FactoryBot.define do
     latitude { 52 }
     longitude { 13 }
     rating { 4 }
+
+    trait :with_skills do
+      after(:create) do |partner|
+        partner.skills << create(:skill)
+      end
+    end
+
+    trait :with_services do
+      after(:create) do |partner|
+        partner.services << create(:service)
+      end
+    end
   end
 end
